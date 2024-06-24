@@ -1,0 +1,56 @@
+﻿@page "/employees"
+@inject EmployeeManagementSystem.Client.Services.EmployeeService EmployeeService
+
+<h3>EmployeeList</h3>
+<button @onclick="AddEmployee">Add Employee</button>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Employee ID</th>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Salary</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var employee in employees)
+        {
+            <tr>
+                <td>@employee.EmployeeID</td>
+                <td>@employee.Name</td>
+                <td>@employee.Position</td>
+                <td>@employee.Salary</td>
+                <td>
+                    <button @onclick="() => EditEmployee(employee.EmployeeID)">Edit</button>
+                    <button @onclick="() => DeleteEmployee(employee.EmployeeID)">Delete</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+@code {
+    private List<Employee> employees;
+
+    protected override async Task OnInitializedAsync()
+    {
+        employees = await EmployeeService.GetEmployeesAsync();
+    }
+
+    private void AddEmployee()
+    {
+        // Navigation logic to add employee page
+    }
+
+    private void EditEmployee(int id)
+    {
+        // Navigation logic to edit employee page
+    }
+
+    private async Task DeleteEmployee(int id)
+    {
+        await EmployeeService.DeleteEmployeeAsync(id);
+        employees = await EmployeeService.GetEmployeesAsync();
+    }
+}
