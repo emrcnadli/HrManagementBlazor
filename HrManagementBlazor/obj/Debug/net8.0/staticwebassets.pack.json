@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\GIT\\HrManagementBlazor\\HrManagementBlazor\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\HrManagementBlazor.bundle.scp.css",
+      "PackagePath": "staticwebassets\\HrManagementBlazor.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\GIT\\HrManagementBlazor\\HrManagementBlazor\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\GIT\\HrManagementBlazor\\HrManagementBlazor\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\GIT\\HrManagementBlazor\\HrManagementBlazor\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\GIT\\HrManagementBlazor\\HrManagementBlazor\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.HrManagementBlazor.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.HrManagementBlazor.props",
+      "PackagePath": "build\\HrManagementBlazor.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.HrManagementBlazor.props",
+      "PackagePath": "buildMultiTargeting\\HrManagementBlazor.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.HrManagementBlazor.props",
+      "PackagePath": "buildTransitive\\HrManagementBlazor.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
