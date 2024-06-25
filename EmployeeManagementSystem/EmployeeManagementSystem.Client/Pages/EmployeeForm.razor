@@ -27,7 +27,7 @@
     [Parameter]
     public int EmployeeID { get; set; }
 
-    private Employee employee = new Employee();
+    private EmployeeManagementSystem.Client.Models.Employee employee = new EmployeeManagementSystem.Client.Models.Employee();
     private bool isNew => EmployeeID == 0;
 
     protected override async Task OnInitializedAsync()

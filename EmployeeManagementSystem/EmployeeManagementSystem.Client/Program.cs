@@ -8,6 +8,6 @@ builder.RootComponents.Add<App>("#app");
 builder.RootComponents.Add<HeadOutlet>("head::after");
 
 // Register EmployeeService
-builder.Services.AddScoped<EmployeeService>(sp => new EmployeeService(sp.GetRequiredService<HttpClient>()));
+builder.Services.AddScoped<EmployeeService>();
 
 await builder.Build().RunAsync();
