@@ -1,0 +1,104 @@
+﻿@page "/employees"
+@using EmployeeManagementSystem.Models
+@inject EmployeeManagementSystem.Services.EmployeeService EmployeeService
+
+<h3>Employee Management System</h3>
+
+<!-- Add Employee Form -->
+<EditForm Model="newEmployee" OnValidSubmit="AddEmployee">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+    <div>
+        <label>Name:</label>
+        <InputText @bind-Value="newEmployee.Name" />
+    </div>
+    <div>
+        <label>Employee ID:</label>
+        <InputNumber @bind-Value="newEmployee.EmployeeID" />
+    </div>
+    <div>
+        <label>Position:</label>
+        <InputText @bind-Value="newEmployee.Position" />
+    </div>
+    <div>
+        <label>Salary:</label>
+        <InputNumber @bind-Value="newEmployee.Salary" />
+    </div>
+    <button type="submit">@formButtonLabel</button>
+</EditForm>
+
+<!-- Display Employees -->
+<table class="table">
+    <thead>
+        <tr>
+            <th>Employee ID</th>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Salary</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var employee in employees)
+        {
+            <tr>
+                <td>@employee.EmployeeID</td>
+                <td>@employee.Name</td>
+                <td>@employee.Position</td>
+                <td>@employee.Salary</td>
+                <td>
+                    <button @onclick="() => EditEmployee(employee)">Edit</button>
+                    <button @onclick="() => DeleteEmployee(employee.EmployeeID)">Delete</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@code {
+    private List<Employee> employees;
+    private Employee newEmployee = new Employee();
+    private bool isEditing = false;
+    private string formButtonLabel = "Add Employee";
+
+    protected override void OnInitialized()
+    {
+        employees = EmployeeService.GetEmployees();
+    }
+
+    private void AddEmployee()
+    {
+        if (isEditing)
+        {
+            EmployeeService.UpdateEmployee(newEmployee);
+            isEditing = false;
+            formButtonLabel = "Add Employee";
+        }
+        else
+        {
+            EmployeeService.AddEmployee(newEmployee);
+        }
+
+        newEmployee = new Employee();
+        employees = EmployeeService.GetEmployees();
+    }
+
+    private void EditEmployee(Employee employee)
+    {
+        newEmployee = new Employee
+            {
+                EmployeeID = employee.EmployeeID,
+                Name = employee.Name,
+                Position = employee.Position,
+                Salary = employee.Salary
+            };
+        isEditing = true;
+        formButtonLabel = "Update Employee";
+    }
+
+    private void DeleteEmployee(int employeeId)
+    {
+        EmployeeService.DeleteEmployee(employeeId);
+        employees = EmployeeService.GetEmployees();
+    }
+}
