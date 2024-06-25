@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "EmployeeManagementSystem",
   "resources": {
-    "hash": "sha256-5g8D+PLr9AaahlookzT+ej37tHL4FzfwTcqeM0wj8Ug=",
+    "hash": "sha256-A8M5r+gGiVSxqurKtvZMM3ReeqOg2Q51XvVWpyG6GYg=",
     "jsModuleNative": {
       "dotnet.native.8.0.1.nn8jpir7g7.js": "sha256-SGOlISx+3G4kkvpC9Uq3qoPGsnjxGmW61QBev0lyI5U="
     },
@@ -208,10 +208,10 @@
       "mscorlib.wasm": "sha256-EpWTfh4m/hEcXRFYMCR9YeYHwdUJgcm1laBaxWfq2S4=",
       "netstandard.wasm": "sha256-2kH24/YfHmU3B4eYRyRmiwebYROM4+B9eDWKvMnUdP8=",
       "System.Private.CoreLib.wasm": "sha256-CsySKiP7HYY1pS8LTDE60EkqiX5oHb3WoEZHDNd1yK0=",
-      "EmployeeManagementSystem.wasm": "sha256-A0oiyWRTi7pzUFaksXYMQO4ZBUdS+76+Q1XavndoLHE="
+      "EmployeeManagementSystem.wasm": "sha256-6uU02CChn8vwxdRoG1in9NKMFfpY4B1gxFlJjK0TC5w="
     },
     "pdb": {
-      "EmployeeManagementSystem.pdb": "sha256-uq9WfOAl6IrFDbhLpL9p2V8oR+Sl939FcD8DJjhiAyo="
+      "EmployeeManagementSystem.pdb": "sha256-ZdJmt14Lzku1TRSVRNbTobOTEd7ltCyUgvPQSKP/fUg="
     }
   },
   "cacheBootResources": true,
