@@ -1,0 +1,61 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\GIT\\HrManagementBlazor\\EmployeeManagementSystem\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "C:\\GIT\\HrManagementBlazor\\EmployeeManagementSystem\\obj\\Debug\\net8.0\\compressed\\xsoqygczv8.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "C:\\GIT\\HrManagementBlazor\\EmployeeManagementSystem\\obj\\Debug\\net8.0\\scopedcss\\bundle\\EmployeeManagementSystem.styles.css",
+      "PackagePath": "staticwebassets\\EmployeeManagementSystem.styles.css"
+    },
+    {
+      "Id": "C:\\GIT\\HrManagementBlazor\\EmployeeManagementSystem\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\GIT\\HrManagementBlazor\\EmployeeManagementSystem\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\GIT\\HrManagementBlazor\\EmployeeManagementSystem\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\GIT\\HrManagementBlazor\\EmployeeManagementSystem\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\GIT\\HrManagementBlazor\\EmployeeManagementSystem\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "C:\\GIT\\HrManagementBlazor\\EmployeeManagementSystem\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\GIT\\HrManagementBlazor\\EmployeeManagementSystem\\wwwroot\\sample-data\\weather.json",
+      "PackagePath": "staticwebassets\\sample-data\\weather.json"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.EmployeeManagementSystem.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.EmployeeManagementSystem.props",
+      "PackagePath": "build\\EmployeeManagementSystem.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.EmployeeManagementSystem.props",
+      "PackagePath": "buildMultiTargeting\\EmployeeManagementSystem.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.EmployeeManagementSystem.props",
+      "PackagePath": "buildTransitive\\EmployeeManagementSystem.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
